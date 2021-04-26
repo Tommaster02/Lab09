@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <?php
+      echo "<table>";
+        for ($row=0; $row <=100 ; $row++)
+        {
+          echo "<tr>";
+          for ($col=0; $col <=100 ; $col++)
+          {
+            if ($row==0 && $col==0) {
+              echo "<td> </td>";
+            }
+            else if ($row == 0) {
+              echo "<th>".$col."</th>";
+            }
+            else if ($col == 0) {
+              echo "<th>".$row."</th>";
+            }
+            else{
+            echo "<td>".$row*$col."</td>";
+            }
+          }
+          echo "</tr>";
+        }
+        echo "</table>";
+    ?>
+  </body>
+</html>
